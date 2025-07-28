@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xichavo Wisdom Mnisi Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="profile.jpg" alt="Profile picture" class="profile-pic" />
+            <div>
+                <h1>Xichavo Wisdom Mnisi</h1>
+                <p>Computer Science Student | Software Developer | Web Developer</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>
+            I'm a Computer Science student at Tshwane University of Technology. I build web and mobile applications
+            using
+            Java, React Native, Python, Flutter, PHP, and more.
+        </p>
+    </section>
+
+    <section id="projects" data-aos="fade-right">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Vehicle Management System</strong> - A school project where I contributed to the frontend using
+                Python,
+                HTML, CSS, and TypeScript.</li>
+        </ul>
+    </section>
+
+    <section id="contact" data-aos="fade-left">
+        <h2>Contact</h2>
+        <p>Email: wxichavo@gmail.com</p>
+        <p>Cellphone Number: 060-832-0475</p>
+        <p>GitHub: <a href="https://github.com/Wisdom893" target="_blank">Wisdom893</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/xichavo-wisdom-mnisi-072876317/" target="_blank">Xichavo
+                Wisdom Mnisi</a></p>
+    </section>
+
+    <section data-aos="fade-up" data-aos-delay="200" data-aos-offset="100"></section>
+
+    <button id="toggle-theme">🌙 Toggle Dark Mode</button>
+    <script src="script.js"></script>
+
+    <!--Adding Animations-->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // animation duration in ms
+            once: true      // only animate once while scrolling down
+        });
+    </script>
+</body>
+
+</html>
