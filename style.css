@@ -16,6 +16,12 @@ body{
     color: white;
 }
 
+.main-container{
+    width: 60%;
+    margin-left: 0 auto;
+    text-align: left;
+}
+
 .profile-pic{
     width: 100px;
     height: 100px;
