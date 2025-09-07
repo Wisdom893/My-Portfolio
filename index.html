@@ -7,78 +7,148 @@
     <title>Xichavo Wisdom Mnisi Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Header / Hero -->
     <header>
         <div class="header-container">
             <img src="profile.jpg" alt="Profile picture" class="profile-pic" />
             <div>
                 <h1>Xichavo Wisdom Mnisi</h1>
-                <p>Computer Science Student | Software Developer | Web Developer</p>
+                <p>💻 Computer Science Student | Software Developer | Web Developer</p>
             </div>
         </div>
     </header>
 
     <div class="main-container">
-    <section id="about" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>
-            I'm a Computer Science student at Tshwane University of Technology. I build web and mobile applications
-            using
-            Java, React Native, Python, Flutter, PHP, JavaScript, TypeScript and more.
-        </p>
-    </section>
+        <!-- About -->
+        <section id="about" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p>
+                I’m a Computer Science student at Tshwane University of Technology with a strong passion for technology
+                and innovation. I enjoy building both web and mobile applications using <strong>Java, React Native,
+                    Python, PHP, JavaScript, TypeScript</strong> and more.
+            </p>
+            <p>
+                I’m a natural problem-solver — I enjoy finding creative and efficient solutions to complex challenges,
+                whether in code or real-world situations. I have a curious mindset, always eager to learn new
+                technologies, improve my skills, and apply them in practical projects.
+            </p>
+            <p>
+                My goal is to grow as a versatile developer, contribute to impactful projects, and continue developing
+                solutions that make people’s lives easier.
+            </p>
+        </section>
 
-    <section id="projects" data-aos="fade-right">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Vehicle Management System</strong> - A school project where I contributed to the frontend
-                using HTML, CSS, and TypeScript.</li>
-        </ul>
-    </section>
+        <!-- Education -->
+        <section id="education" data-aos="fade-right">
+            <h2>Education</h2>
+            <ul class="timeline">
+                <li><strong>Matric</strong> - (2021) at Msengi Secondary School.</li>
+                <li><strong>Tertiary</strong> - Final year Diploma in Computer Science at Tshwane
+                    University of Technology (2022 - present).</li>
+            </ul>
+        </section>
 
-    <section id="contact" data-aos="fade-left">
-        <h2>Contact</h2>
-        <p>Email: wxichavo@gmail.com</p>
-        <p>Cellphone Number: 060-832-0475</p>
-        <p>GitHub: <a href="https://github.com/Wisdom893" target="_blank">Wisdom893</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/xichavo-wisdom-mnisi-072876317/" target="_blank">Xichavo
-                Wisdom Mnisi</a></p>
-    </section>
+        <!-- Skills -->
+        <section id="skills" data-aos="fade-up">
+            <h2>Skills</h2>
+            <div class="skills">
+                <i class="fab fa-java"></i> Java
+                <i class="fab fa-js"></i> JavaScript
+                <i class="fab fa-html5"></i> HTML
+                <i class="fab fa-css3-alt"></i> CSS
+                <i class="fab fa-php"></i> PHP
+                <i class="fab fa-react"></i> React Native
+            </div>
+        </section>
 
-    <section id="skills" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Java | JavaScript | HTML | CSS | TypeScript | PHP | React Native | Flutter</p>
-    </section>
+        <!-- Experience -->
+        <section id="experience" data-aos="fade-left">
+            <h2>Experience</h2>
+            <p>Still gaining experience through personal projects, coursework, and contributing to open-source.</p>
+        </section>
 
-    <section id="education" data-aos="fade-right">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Matric</strong> - (2021) at Msengi Secondary School.</li>
-            <li><strong>Tertiary</strong> - I am currently in my final year of a Diploma in Computer Science at Tshwane
-                University of Technology, where I have been enrolled since 2022.</li>
-        </ul>
-    </section>
+        <!-- Projects -->
+        <section id="projects" data-aos="fade-right">
+            <h2>Projects</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Vehicle Management System</h3>
+                    <p>A school project where I contributed to the frontend using HTML, CSS, and TypeScript.</p>
+                    <a href="https://github.com/Wisdom893" target="_blank">🔗 View on GitHub</a>
+                </div>
+            </div>
+        </section>
 
-    <section id="experience" data-aos="fade-left">
-        <h2>Experience</h2>
-    </section>
+        <!-- Contact -->
+        <section id="contact" data-aos="fade-left">
+            <h2>Contact</h2>
+            <p><i class="fas fa-envelope"></i> Email: <a
+                    href="mailto:mnisiwisdom@outlook.com">mnisiwisdom@outlook.com</a></p>
+            <p><i class="fas fa-phone"></i> Cellphone: 060-832-0475</p>
+            <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Wisdom893"
+                    target="_blank">Wisdom893</a></p>
+            <p><i class="fab fa-linkedin"></i> LinkedIn:
+                <a href="https://www.linkedin.com/in/xichavo-wisdom-mnisi-072876317/" target="_blank">Xichavo Wisdom
+                    Mnisi</a>
+            </p>
+        </section>
 
-    <section data-aos="fade-up" data-aos-delay="200" data-aos-offset="100"></section>
+        <!-- Contact me -->
+        <section id="contacts">
+            <h2>Email Me</h2>
+            <form id="contact-form">
+                <input type="text" name="user_name" placeholder="Your Name" required />
+                <input type="email" name="user_email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="form-status"></p>
+        </section>
 
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Xichavo Wisdom Mnisi | All Rights Reserved</p>
+    </footer>
+
+    <!-- Dark Mode Toggle -->
     <button id="toggle-theme">🌙 Toggle Dark Mode</button>
     <script src="script.js"></script>
 
-    <!--Adding Animations-->
+    <!-- AOS Animations -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration: 1000, // animation duration in ms
-            once: true      // only animate once while scrolling down
+            duration: 1000,
+            once: true
         });
     </script>
-    </div>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("ssp5kL0-ykiNhALcH");
+        })();
+
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm("service_wesayxx", "template_jz7xqnp", this)
+                .then(function () {
+                    document.getElementById("form-status").innerText = "✅ Message sent successfully!";
+                }, function (error) {
+                    document.getElementById("form-status").innerText = "❌ Failed to send message. Please try again.";
+                    console.error("EmailJS Error:", error);
+                });
+        });
+    </script>
+
 </body>
 
 </html>
