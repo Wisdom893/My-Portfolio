@@ -84,7 +84,7 @@ section {
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.4s ease, color 0.4s ease;
 }
 
-/* Hover Effect (Light Mode) */
+/* (Light Mode) */
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
@@ -97,7 +97,7 @@ body.dark-mode .card {
   box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
 }
 
-/* Hover Effect (Dark Mode) */
+/*(Dark Mode) */
 body.dark-mode .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
@@ -121,7 +121,7 @@ body.dark-mode .card:hover {
   color: #2980b9;
 }
 
-/* Timeline for Education */
+
 .timeline {
   list-style: none;
   padding: 0;

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <!-- Header / Hero -->
+    <!--Header-->
     <header>
         <div class="header-container">
             <img src="profile.jpg" alt="Profile picture" class="profile-pic" />
@@ -28,8 +28,8 @@
             <h2>About Me</h2>
             <p>
                 I’m a Computer Science student at Tshwane University of Technology with a strong passion for technology
-                and innovation. I enjoy building both web and mobile applications using <strong>Java, React Native,
-                    Python, PHP, JavaScript, TypeScript</strong> and more.
+                and innovation. I enjoy building both web and mobile applications using <strong>Java, Javascript, HTML, CSS, React Native,
+                    PHP</strong> and i'm interested on learning more languages.
             </p>
             <p>
                 I’m a natural problem-solver — I enjoy finding creative and efficient solutions to complex challenges,
@@ -138,7 +138,7 @@
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
     (function () {
-        emailjs.init("ssp5kL0-ykiNhALcH"); // your public key
+        emailjs.init("ssp5kL0-ykiNhALcH"); 
     })();
 
     document.getElementById("contact-form").addEventListener("submit", function (event) {
@@ -146,7 +146,7 @@
 
         const form = this;
 
-        // Send notification to YOU
+        
         emailjs.sendForm("service_wesayxx", "template_7ca5874", form)
             .then(function () {
                 console.log("📩 Notification sent to Outlook!");
@@ -154,7 +154,7 @@
                 console.error("Notification error:", error);
             });
 
-        // Send auto-reply to USER
+        
         emailjs.sendForm("service_wesayxx", "template_jz7xqnp", form)
             .then(function () {
                 document.getElementById("form-status").innerText = "✅ Message sent successfully!";
