@@ -27,14 +27,18 @@
         <section id="about" data-aos="fade-up">
             <h2>About Me</h2>
             <p>
-                I’m a Computer Science student at Tshwane University of Technology with a strong passion for technology
-                and innovation. I enjoy building both web and mobile applications using <strong>Java, Javascript, HTML, CSS, React Native,
-                    PHP</strong> and i'm interested on learning more languages.
+                I am a Computer Science student at Tshwane University of Technology with a strong passion for technology
+                and innovation. I have completed all my academic modules and am currently seeking Work-Integrated
+                Learning
+                (WIL) or internship opportunities required to obtain my qualification.
             </p>
             <p>
-                I’m a natural problem-solver — I enjoy finding creative and efficient solutions to complex challenges,
-                whether in code or real-world situations. I have a curious mindset, always eager to learn new
-                technologies, improve my skills, and apply them in practical projects.
+                I enjoy building web applications using <strong>Java, JavaScript, HTML, CSS, MySQL, Git, and
+                    GitHub.</strong>
+                I am a natural problem-solver who enjoys developing creative and efficient solutions to both
+                technical and real-world challenges. With a curious mindset, I am always eager to learn new
+                technologies,
+                strengthen my skills, and apply them in practical projects.
             </p>
             <p>
                 My goal is to grow as a versatile developer, contribute to impactful projects, and continue developing
@@ -74,33 +78,94 @@
         <!-- Projects -->
         <section id="projects" data-aos="fade-right">
             <h2>Projects</h2>
+
             <div class="card-grid">
+
+                <!-- Project 1 -->
                 <div class="card">
                     <h3>Vehicle Management System</h3>
-                    <p>The Logistics Management System(School project) is designed to streamline and digitize the 
-                       management of organizational vehicles, trips, and inspections. The system ensures 
-                       efficient scheduling, tracking, and maintenance of vehicles while maintaining 
-                       compliance with data privacy regulations. The web-based application will serve two 
-                       main user roles: Admin (Facility Lead) and Employee (Driver/Staff), each with tailored 
-                       functionality.</p>
-                    <a href="https://github.com/Wisdom893/vehicle-management-system-application.git" target="_blank">🔗 View on GitHub</a>
+
+                    <button class="details-btn" onclick="toggleDetails(this)">
+                        View Details
+                    </button>
+
+                    <div class="project-details">
+                        <p>
+                            The Logistics Management System is a school project designed to digitize and streamline
+                            vehicle management, trip scheduling, and inspections within an organization.
+                        </p>
+
+                        <ul>
+                            <li>Role-based access (Admin & Employee)</li>
+                            <li>Vehicle booking and trip tracking</li>
+                            <li>Inspection and maintenance records</li>
+                            <li>Secure data handling and privacy compliance</li>
+                        </ul>
+
+                        <p><strong>Technologies:</strong> Java, HTML, CSS, JavaScript, MySQL</p>
+
+                        <a href="https://github.com/Wisdom893/vehicle-management-system-application.git" target="_blank"
+                            class="github-link">
+                            🔗 View on GitHub
+                        </a>
+                    </div>
                 </div>
+
+                <!-- Project 2 -->
                 <div class="card">
-                    <h3>Portfolio</h3>
-                    <p>This portfolio website was built from scratch using HTML for 
-                        structure, CSS for styling, and JavaScript for interactivity. 
-                        It features my personal profile, technical skills, and a collection of projects I have developed. 
-                        The design is clean, responsive, and created to give potential employers a clear view of 
-                        my abilities as a front-end developer</p>
-                    <a href="https://github.com/Wisdom893/My-Portfolio.git" target="_blank">🔗 View on GitHub</a>
+                    <h3>Personal Portfolio Website</h3>
+
+                    <button class="details-btn" onclick="toggleDetails(this)">
+                        View Details
+                    </button>
+
+                    <div class="project-details">
+                        <p>
+                            A responsive personal portfolio built from scratch to showcase my profile,
+                            skills, and projects to potential employers.
+                        </p>
+
+                        <ul>
+                            <li>Responsive design for all screen sizes</li>
+                            <li>Dark mode toggle</li>
+                            <li>AOS animations for smooth scrolling</li>
+                            <li>EmailJS contact form integration</li>
+                        </ul>
+
+                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+
+                        <a href="https://github.com/Wisdom893/My-Portfolio.git" target="_blank" class="github-link">
+                            🔗 View on GitHub
+                        </a>
+                    </div>
                 </div>
+
+                <!-- Project 3 -->
                 <div class="card">
-                    <h3>Abahlali freedom party</h3>
-                    <p>The Abahlali Freedom Party Web Application is a lightweight, secure, and user-friendly platform 
-                       designed to streamline digital communication and document management between the party’s administrators and its members.
-                       The system allows registered users to upload important documents, while administrators manage 
-                       updates and access uploaded files through a protected admin dashboard. (This project is 50% done)</p>
+                    <h3>Abahlali Freedom Party Web Application</h3>
+
+                    <button class="details-btn" onclick="toggleDetails(this)">
+                        View Details
+                    </button>
+
+                    <div class="project-details">
+                        <p>
+                            A secure web platform designed to manage communication and document uploads
+                            between party administrators and members.
+                        </p>
+
+                        <ul>
+                            <li>User authentication system</li>
+                            <li>Admin dashboard for document management</li>
+                            <li>Secure file uploads</li>
+                            <li>Member access control</li>
+                        </ul>
+
+                        <p><strong>Status:</strong> 50% Complete</p>
+                        <p><strong>Technologies:</strong> PHP, MySQL, HTML, CSS, JavaScript</p>
+                    </div>
                 </div>
+
             </div>
         </section>
 
@@ -134,7 +199,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Xichavo Wisdom Mnisi | All Rights Reserved</p>
+        <p>&copy; 2026 Xichavo Wisdom Mnisi | All Rights Reserved</p>
     </footer>
 
     <!-- Dark Mode Toggle -->
@@ -151,35 +216,35 @@
     </script>
 
     <!-- EmailJS -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-    (function () {
-        emailjs.init("ssp5kL0-ykiNhALcH"); 
-    })();
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("ssp5kL0-ykiNhALcH");
+        })();
 
-    document.getElementById("contact-form").addEventListener("submit", function (event) {
-        event.preventDefault();
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
 
-        const form = this;
+            const form = this;
 
-        
-        emailjs.sendForm("service_wesayxx", "template_7ca5874", form)
-            .then(function () {
-                console.log("📩 Notification sent to Outlook!");
-            }, function (error) {
-                console.error("Notification error:", error);
-            });
 
-        
-        emailjs.sendForm("service_wesayxx", "template_jz7xqnp", form)
-            .then(function () {
-                document.getElementById("form-status").innerText = "✅ Message sent successfully!";
-            }, function (error) {
-                document.getElementById("form-status").innerText = "❌ Failed to send message. Please try again.";
-                console.error("Auto-reply error:", error);
-            });
-    });
-</script>
+            emailjs.sendForm("service_wesayxx", "template_7ca5874", form)
+                .then(function () {
+                    console.log("📩 Notification sent to Outlook!");
+                }, function (error) {
+                    console.error("Notification error:", error);
+                });
+
+
+            emailjs.sendForm("service_wesayxx", "template_jz7xqnp", form)
+                .then(function () {
+                    document.getElementById("form-status").innerText = "✅ Message sent successfully!";
+                }, function (error) {
+                    document.getElementById("form-status").innerText = "❌ Failed to send message. Please try again.";
+                    console.error("Auto-reply error:", error);
+                });
+        });
+    </script>
 
 
 </body>

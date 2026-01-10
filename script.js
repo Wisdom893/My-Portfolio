@@ -20,3 +20,16 @@ toggleBtn.addEventListener("click", () => {
     toggleBtn.textContent = "🌙 Dark Mode";
   }
 });
+
+//Buttons
+function toggleDetails(button) {
+    const details = button.nextElementSibling;
+
+    if (details.style.display === "block") {
+        details.style.display = "none";
+        button.innerText = "View Details";
+    } else {
+        details.style.display = "block";
+        button.innerText = "Hide Details";
+    }
+}
